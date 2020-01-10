@@ -108,7 +108,9 @@ sub main {{
     print STDERR "Cannot find .runfiles directory for $0" and exit 1;
   }}
 
-  print "$module_space\\n";
+  my $lib = "$module_space/io_bazel_rules_perl/third_party/lib/perl5";
+
+  $ENV{{PERL5LIB}} = "$lib";
 
   my $main_filename = catfile($module_space, '{workspace_name}', '{main_path}');
 
