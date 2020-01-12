@@ -34,5 +34,5 @@ perl_test(
 		":yaml_example",
 		"//third_party/lib/perl5:YAML_Tiny",
     ],
-    srcs = ["yaml_example_test.t"],
+    srcs = ["t/yaml_example_test.t"],
 )
